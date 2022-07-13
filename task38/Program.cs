@@ -21,7 +21,7 @@ double min = array[0];
 for (int i = 0; i < array.Length; i++)
 {
     if (array[i]>max) max = array[i];
-    if (array[i]<min) min = array[i];
+    else if  (array[i]<min) min = array[i];
 }
 double rezult =max-min;
 Console.WriteLine("[{0}] -> {1:f1}", string.Join("; ", array), rezult);
